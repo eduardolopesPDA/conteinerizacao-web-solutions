@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apache HTTPD - Web Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 {
+            color: #f5576c;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        .badge {
+            background: #f5576c;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        .info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+        .info p {
+            margin: 0.5rem 0;
+        }
+        .status {
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Apache HTTPD</h1>
+        <span class="badge">Porta 8081</span>
+        <p>Servidor web funcionando via Kubernetes</p>
+        <div class="info">
+            <p><strong>Servidor:</strong> Apache 2.4</p>
+            <p><strong>Ambiente:</strong> Docker + Kubernetes</p>
+            <p><strong>Empresa:</strong> Web Solutions Ltda.</p>
+            <p><strong>Status:</strong> <span class="status">● Online</span></p>
+        </div>
+    </div>
+</body>
+</html>

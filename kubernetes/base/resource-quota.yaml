@@ -1,0 +1,20 @@
+# ============================================
+# Resource Quota - Web Solutions
+# ============================================
+# Limita recursos no namespace
+# ============================================
+
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: web-solutions-quota
+  namespace: web-solutions
+spec:
+  hard:
+    requests.cpu: "2"
+    requests.memory: 2Gi
+    limits.cpu: "4"
+    limits.memory: 4Gi
+    pods: "20"
+    services: "10"
+    persistentvolumeclaims: "5"

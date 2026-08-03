@@ -1,0 +1,14 @@
+# ============================================
+# Namespace - Web Solutions
+# ============================================
+# Isola todos os recursos da empresa
+# ============================================
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: web-solutions
+  labels:
+    name: web-solutions
+    environment: development
+    company: websolutions

@@ -1,0 +1,41 @@
+# ============================================
+# PersistentVolume - Web Solutions
+# ============================================
+# Armazenamento compartilhado para logs
+# ============================================
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nginx-pv
+  labels:
+    type: local
+    app: nginx
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: "/mnt/data/nginx"
+    type: DirectoryOrCreate
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: apache-pv
+  labels:
+    type: local
+    app: apache
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: "/mnt/data/apache"
+    type: DirectoryOrCreate

@@ -1,0 +1,41 @@
+# ============================================
+# PersistentVolumeClaim - Web Solutions
+# ============================================
+# Solicitação de armazenamento para os pods
+# ============================================
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nginx-pvc
+  namespace: web-solutions
+  labels:
+    app: nginx
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 512Mi
+  selector:
+    matchLabels:
+      app: nginx
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: apache-pvc
+  namespace: web-solutions
+  labels:
+    app: apache
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 512Mi
+  selector:
+    matchLabels:
+      app: apache

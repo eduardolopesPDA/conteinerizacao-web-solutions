@@ -171,11 +171,6 @@ kubectl delete namespace web-solutions
 kubectl delete pv nginx-pv apache-pv
 ```
 
-## Documentação
-
-- [Relatório de Análise](docs/relatorio-analise.md)
-- [Arquitetura](docs/arquitetura.md)
-
 
 ## Tecnologias
 

@@ -47,7 +47,7 @@ conteinerizacao-web-solutions/
 └── README.md                  # Este arquivo
 ```
 
-## Início Rápido
+## Como iniciar o projeto
 
 ### 1. Setup
 
